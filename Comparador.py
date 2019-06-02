@@ -1,7 +1,7 @@
 import os
 
 nueva_linea_1 = []
-nueva_linea_2 = []
+nueva_linea_2 = [] #owo
 print("Archivo 1:")
 nombre_del_archivo_1 = input()
 archivo_1 = open(str(os.getcwd())+"\\"+nombre_del_archivo_1+".txt", "r+")
