@@ -9,6 +9,8 @@ lineas_1 = archivo_1.readlines()
 for n in range(len(lineas_1)-1):
     lineas_1[n] = lineas_1[n].replace('\n', '')
 lineas_1[0] = lineas_1[0].split(" ")
+lineas_1[0][0] = int(lineas_1[0][0])
+lineas_1[0][1] = int(lineas_1[0][1])
 
 nombres.remove(nombre_del_archivo_1)
 for x in range(5):
@@ -16,4 +18,6 @@ for x in range(5):
     for n in range(len(lector)-1):   
         lector[n] = lector[n].replace('\n', '')
     lector[0] = lector[0].split(" ")
+    lector[0][0] = int(lector[0][0])
+    lector[0][1] = int(lector[0][1])
     colecion.append(lector)
