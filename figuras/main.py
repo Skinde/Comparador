@@ -1,4 +1,5 @@
 import os
+
 exec(open(str(os.getcwd())+"\\"+"lector.py").read())
 
 def comparacion(matriz_1,matriz_2):
@@ -9,14 +10,11 @@ def comparacion(matriz_1,matriz_2):
         temp=area
         for i in range(1,fila+1):
             for o in range(columna):
-                print(matriz_1[i][o], end="")
-                print(matriz_2[i][o], end="")
-                print()
                 if(matriz_1[i][o]!=matriz_2[i][o]):
                     temp-=1
         similitud=temp/area
         return similitud    
     else:
         print("La copia difiere de la original.")
-
-print(comparacion(lineas_1,colecion[0]))
+for i in range (len(colecion)):
+    print(lineas_1,'\n', colecion[i],'\n', comparacion(lineas_1,colecion[i]))
