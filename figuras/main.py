@@ -8,13 +8,14 @@ def comparacion(matriz_1,matriz_2):
         area=fila*columna
         temp=area
         for i in range(1,fila+1):
-            for o in range(1,columna):
-                print(i)
-                print(o)
-                if(matriz_1[i][o]==matriz_2[i][o]):
-                    temp=temp-1
+            for o in range(columna):
+                print(matriz_1[i][o], end="")
+                print(matriz_2[i][o], end="")
+                print()
+                if(matriz_1[i][o]!=matriz_2[i][o]):
+                    temp-=1
         similitud=temp/area
-        return similitud
+        return similitud    
     else:
         print("La copia difiere de la original.")
 

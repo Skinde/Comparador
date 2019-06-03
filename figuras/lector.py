@@ -12,7 +12,7 @@ lineas_1[0] = lineas_1[0].split(" ")
 lineas_1[0][0] = int(lineas_1[0][0])
 lineas_1[0][1] = int(lineas_1[0][1])
 
-nombres.remove(nombre_del_archivo_1)
+
 for x in range(5):
     lector = open(str(os.getcwd())+"\\"+nombres[x]+".txt", "r+").readlines()
     for n in range(len(lector)-1):   
