@@ -12,7 +12,7 @@ def comparacion(matriz_1,matriz_2):
             for o in range(columna):
                 if(matriz_1[i][o]!=matriz_2[i][o]):
                     temp-=1
-        similitud=temp/area
+        similitud=round(temp/area,2)
         if similitud < 0.8:
             print("La copia difiere de la original.")
         elif similitud == 1:
@@ -23,5 +23,17 @@ def comparacion(matriz_1,matriz_2):
         return    
     else:
         print("No se puede comparar las figuras.")
-for i in range (len(colecion)):
-    print(lineas_1,'\n', colecion[i],'\n', comparacion(lineas_1,colecion[i]))
+
+
+
+for i in range(len(colecion)):
+    print(comparacion(lineas_1,colecion[i]))
+    for o in range(1,len(lineas_1)):
+        print(lineas_1[o])
+    for z in range(1,len(colecion[i])):
+        print(colecion[i][z])
+    print()
+
+         
+
+
